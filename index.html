@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -23,7 +23,7 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__ logo" id="nav-logo">Gideon</a>
+            <a href="#" class="nav__logo" id="nav-logo">Gideon</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
@@ -60,7 +60,7 @@
                 <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
 
-            <div class="nav_btns">
+            <div class="nav__btns">
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -93,7 +93,12 @@
                         </a>
                         <a rel="noopener" href="https://wa.me/2347039502751/?text=Hi%20there!%20My%20name%20is%20_____"
                             target="_blank" class="home__social-icon" title="WhatsApp">
-                            <i class="uil uil-whatsapp"></i></a>
+                            <i class="uil uil-whatsapp"></i>
+                        </a>
+                        <a rel="noopener" href="https://t.me/egideons" target="_blank" class="home__social-icon"
+                            title="WhatsApp">
+                            <i class="uil uil-telegram-alt"></i>
+                        </a>
                     </div>
                     <div class="home__img">
                         <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
@@ -612,15 +617,99 @@
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">Most recent work</span>
 
-            <div class="portfolio__container container">
-                <div>
+            <div class="portfolio__container container swiper-container swiper">
+                <div class="swiper-wrapper">
                     <!--==================== PORTFOLIO 1 ====================-->
-                    <div class="portfolio__content grid">
-                        <img src="assets/img/portfolio1.jpg" alt="portfolio1" class="portfolio__img">
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/Portfolio1.jpg" alt="Portfolio1" class="portfolio__img">
 
-                        <div class="portfolio__data"></div>
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Western Pacific Solution Website</h3>
+                            <p class="portfolio__description">A Marine Service Company Website</p>
+                            <a rel="noopener"
+                                href="https://github.com/Western-Pacific-Solutions/Western-Pacific-Solutions-Website"
+                                target="_blank" title="Western Pacific Solution"
+                                class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
                     </div>
+
+                    <!--==================== PORTFOLIO 2 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/Portfolio2.jpg" alt="Portfolio2" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">ChatApp</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, with ui components and
+                                animated interactions. <br> A simple chat application that can be run on any modern web
+                                browser</p>
+                            <a rel="noopener" href="https://github.com/egideons/ChatApp" target="_blank" title="ChatApp"
+                                class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PORTFOLIO 3 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/Portfolio3.png" alt="Portfolio3" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">TenderPath</h3>
+                            <p class="portfolio__description">College Website Template using HTML CSS</p>
+                            <a rel="noopener" href="https://student-portal-virid.vercel.app/" target="_blank"
+                                title="TenderPath" class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PORTFOLIO 4 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/Portfolio4.png" alt="Portfolio4" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">ProCareer</h3>
+                            <p class="portfolio__description">This is a student portal website template, which
+                                starts from the landing page to the student dashboard page</p>
+                            <a rel="noopener" href="https://pro-career.vercel.app/" target="_blank" title="ProCareer"
+                                class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PORTFOLIO 5 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/Portfolio4.png" alt="Portfolio4" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">ProCareer</h3>
+                            <p class="portfolio__description">This is a student portal website template, which
+                                starts from the landing page to the student dashboard page</p>
+                            <a rel="noopener" href="https://pro-career.vercel.app/" target="_blank" title="ProCareer"
+                                class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
 
         </section>
@@ -653,7 +742,7 @@
 
 
     <!--==================== SWIPER JS ====================-->
-    <script src=""></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
