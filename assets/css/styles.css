@@ -911,6 +911,12 @@ img {
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
+.contact__form-span {
+  color: red !important;
+  display: inline;
+  float: none;
+}
+
 /*==================== FOOTER ====================*/
 .footer {
   padding-top: 2rem;
